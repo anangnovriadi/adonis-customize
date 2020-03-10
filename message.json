@@ -1,0 +1,20 @@
+{
+    "FOUND": {
+		"error": false,
+		"code": "00",
+		"name": "FOUND",
+		"status": 200,
+		"info": {},
+		"message": "Found.",
+		"data": {}
+    },
+    "NOT_FOUND": {
+        "error": false,
+		"code": "00",
+		"name": "NOT_FOUND",
+		"status": 200,
+		"info": {},
+		"message": "Not Found.",
+		"data": {}
+    }
+}

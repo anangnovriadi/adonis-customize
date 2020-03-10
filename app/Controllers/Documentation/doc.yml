@@ -1,0 +1,30 @@
+paths:
+  /users:
+    post:
+      tags:
+        - Hello
+      summary: Creates a new user.
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: user
+          description: The user to create.
+          schema:
+            type: object
+            required:
+              - userName
+            properties:
+              userName:
+                type: string
+              firstName:
+                type: string
+              lastName:
+                type: string
+      responses:
+        200:
+          description: A User object
+          schema:
+            example: 
+              id: 10
+              name: Jessica Smith
