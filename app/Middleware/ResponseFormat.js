@@ -22,9 +22,11 @@ class ResponseFormat {
     const name = ctx.response.lazyBody.content.name;
     output.code = getJsonParse[name].code;
     output.message = getJsonParse[name].message;
-    output.data = ctx.response.lazyBody.content.data;
+    output.data = ctx.response.lazyBody.content.data
 
-    return ctx.response.send(output);
+    return ctx.response
+      .status(ctx.response.response.statusCode)
+      .send(output);
   }
 }
 

@@ -3,18 +3,32 @@
 		"error": false,
 		"code": "00",
 		"name": "FOUND",
-		"status": 200,
 		"info": {},
 		"message": "Found.",
 		"data": {}
     },
     "NOT_FOUND": {
         "error": false,
-		"code": "00",
+		"code": "01",
 		"name": "NOT_FOUND",
-		"status": 200,
 		"info": {},
 		"message": "Not Found.",
+		"data": {}
+	},
+	"BAD_GATEWAY": {
+        "error": false,
+		"code": "02",
+		"name": "BAD_GATEWAY",
+		"info": {},
+		"message": "Bad Gateway.",
+		"data": {}
+	},
+	"SUCCESS": {
+        "error": false,
+		"code": "04",
+		"name": "SUCCESS",
+		"info": {},
+		"message": "Success.",
 		"data": {}
     }
 }
